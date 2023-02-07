@@ -22,13 +22,13 @@ jobs:
             ${{ runner.OS }}-
 
       - name: Install Dependencies # node module install
-        env:
-          VITE_IMAGE_URL: ${{secrets.VITE_IMAGE_URL}}
         run: |
           cd front-end
           npm install
 
       - name: Build # project build
+        env:
+          VITE_IMAGE_URL: ${{secrets.VITE_IMAGE_URL}}
         run: |
           cd front-end
           npm run build
