@@ -23,6 +23,7 @@ jobs:
 
       - name: Install Dependencies # node module install
         run: |
+          cd front-end
           ls
           npm install
 
