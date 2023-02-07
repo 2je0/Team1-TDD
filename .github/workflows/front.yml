@@ -37,4 +37,4 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: |
           cd front-end
-          aws s3 sync ./dist s3://team1-tdd --profile=jieonkim23"
+          aws s3 sync ./dist s3://team1-tdd 
